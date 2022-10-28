@@ -10,8 +10,8 @@ spec:
   project: default
   source: 
     path: kustomize-guestbook
-    repoURL: "https://github.com/mabusaa/argocd-example-apps.git"
-    targetRevision: master
+    repoURL: "https://github.com/sumanreddyk/argocd-example-apps.git"
+    targetRevision: suman
     kustomize:
       namePrefix: staging-
       commonLabels:

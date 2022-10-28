@@ -7,6 +7,6 @@ metadata:
     argocd.argoproj.io/secret-type: repo-creds
 stringData:
   type: git
-  url: https://github.com/mabusaa
+  url: https://github.com/sumanreddyk
   password: # password goes here, NOTE: dont push secrets into git, use sealed secrets as a solution for secrets in gitops.
   username: my-token

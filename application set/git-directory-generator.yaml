@@ -6,8 +6,8 @@ metadata:
 spec:
   generators:
   - git:
-      repoURL: https://github.com/mabusaa/argocd-example-apps.git
-      revision: master
+      repoURL: https://github.com/sumanreddyk/argocd-example-apps.git
+      revision: suman
       directories:
       - path: helmcharts/security-policy-charts/*
   template:
@@ -17,8 +17,8 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/mabusaa/argocd-example-apps.git
-        targetRevision: master
+        repoURL: https://github.com/sumanreddyk/argocd-example-apps.git
+        targetRevision: suman
         path: '{{path}}'
       destination:
         server: https://kubernetes.default.svc

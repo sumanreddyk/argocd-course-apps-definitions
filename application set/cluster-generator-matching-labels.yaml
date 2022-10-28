@@ -17,8 +17,8 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/mabusaa/argocd-example-apps.git
-        targetRevision: master
+        repoURL: https://github.com/sumanreddyk/argocd-example-apps.git
+        targetRevision: suman
         path: guestbook
       destination:
         server: '{{server}}'

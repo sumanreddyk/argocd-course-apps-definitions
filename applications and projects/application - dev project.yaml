@@ -10,8 +10,8 @@ spec:
   project: dev-project
   source: 
     path: guestbook
-    repoURL: "https://github.com/mabusaa/argocd-example-apps.git"
-    targetRevision: master
+    repoURL: "https://github.com/sumanreddyk/argocd-example-apps.git"
+    targetRevision: suman
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
