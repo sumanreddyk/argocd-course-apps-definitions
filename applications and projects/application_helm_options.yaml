@@ -1,21 +1,20 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata: 
-  name: no-prune-resources
+  name: helm-app
   namespace: argocd
-spec:
-  destination:
-    namespace: no-prune-resources
+spec: 
+  destination: 
+    namespace: helm-app
     server: "https://kubernetes.default.svc"
   project: default
   source: 
-    path: sync-options/no-prune
+    path: helm-guestbook
     repoURL: "https://github.com/sumanreddyk/argocd-example-apps.git"
     targetRevision: suman
-    directory:
-      recurse: true
+    helm: # It creates tag for all resources in argocd
+     releaseName: my-release
   syncPolicy:
-    automated: {}
     syncOptions:
       - CreateNamespace=true
 

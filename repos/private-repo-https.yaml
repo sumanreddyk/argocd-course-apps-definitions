@@ -8,5 +8,5 @@ metadata:
 stringData:
   type: git
   url: https://github.com/sumanreddyk/argocd-example-apps-private.git
-  password: # password goes here, NOTE: dont push secrets into git, use sealed secrets as a solution for secrets in gitops.
-  username: my-token
+  password: 097c0576bfde9f7819aba872adb3ba72de1d961d # password goes here, NOTE: dont push secrets into git, use sealed secrets as a solution for secrets in gitops.
+  username: sumanreddyk

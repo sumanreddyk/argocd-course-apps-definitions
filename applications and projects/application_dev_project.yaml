@@ -1,21 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata: 
-  name: helm-app
+  name: guestbook-dev-project
   namespace: argocd
 spec: 
   destination: 
-    namespace: helm-app
+    namespace: ns-1 # Only allowed namespaces are deployed in the mentioned project. Just change the namespace name and test.
     server: "https://kubernetes.default.svc"
-  project: default
+  project: dev-project
   source: 
-    path: helm-guestbook
+    path: guestbook
     repoURL: "https://github.com/sumanreddyk/argocd-example-apps.git"
     targetRevision: suman
-    helm:
-     releaseName: my-release
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
-
-    

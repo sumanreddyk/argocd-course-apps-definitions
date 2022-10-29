@@ -12,7 +12,7 @@ spec:
     path: guestbook-with-sub-directories
     repoURL: "https://github.com/sumanreddyk/argocd-example-apps.git"
     targetRevision: suman
-    directory:
+    directory: # It look for all yaml files
       recurse: true
   syncPolicy:
     syncOptions:
